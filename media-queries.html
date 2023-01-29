@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+  <style>
+    body {
+      margin: 0px;
+    }
+
+    .sample-div {
+      height: 250px;
+      width: 250px;
+    }
+
+    .com-div {
+      margin: 1%;
+      height: 300px;
+    }
+
+    .left-column {
+      width: 20%;
+      background-color: aqua;
+    }
+
+    .center-column {
+      width: 54%;
+      background-color: green;
+    }
+
+    .right-column {
+      width: 20%;
+      background-color: yellow;
+    }
+
+    /* Just an assumption follow Bootstrap Device Widths */
+    /* mobile < 300px - 500px */
+
+
+    /* Syntax for Media Query using max-width */
+    /* Latop 900px --> 1400px */
+    /* @media screen and (max-width: 1400px) {
+
+      .sample-div {
+        background-color: pink;
+        border: 5px dotted blue;
+      }
+    } */
+
+    /* Tablet 500px --> 900px */
+    /* @media screen and (max-width: 900px) {
+
+      .sample-div {
+        background-color: green;
+        border: 5px dotted blue;
+      }
+    } */
+
+    /* Mobile 200px --> 500px */
+    /* @media screen and (max-width: 500px) {
+      .sample-div {
+        background-color: purple;
+        border: 5px dotted yellow;
+      }
+    } */
+
+    /* Syntax for Media Query using min-width */
+    /* Mobile 200px --> 500px */
+    /* @media screen and (min-width: 200px) {
+      .sample-div {
+        background-color: purple;
+        border: 5px dotted yellow;
+      }
+    } */
+
+    /* Tablet 500px --> 900px */
+    /* @media screen and (min-width: 500px) {
+      .sample-div {
+        background-color: green;
+        border: 5px dotted yellow;
+      }
+    } */
+
+    /* Laptop 900px --> 1400px */
+    /* @media screen and (min-width: 900px) {
+      .sample-div {
+        background-color: pink;
+        border: 5px dotted yellow;
+      }
+    } */
+    /* Both max-width and min-width */
+    /* More than 1400px */
+    @media screen and (min-width: 1400px) {
+      .sample-div {
+        background-color: aqua;
+        border: 5px dotted yellow;
+      }
+    }
+
+    /* Laptop */
+    @media screen and (min-width: 900px) and (max-width: 1400px) {
+      .sample-div {
+        background-color: pink;
+        border: 5px dotted yellow;
+      }
+    }
+
+    /* Tablet */
+    @media screen and (min-width: 500px) and (max-width: 900px) {
+      .sample-div {
+        background-color: green;
+        border: 5px dotted yellow;
+      }
+
+      .center-column {
+        width: 66%;
+      }
+
+      .left-column {
+        width: 30%;
+      }
+
+      .right-column {
+        width: 30%;
+      }
+    }
+
+    /* Mobile  */
+    @media screen and (max-width: 500px) {
+      .sample-div {
+        background-color: purple;
+        border: 5px dotted yellow;
+      }
+
+      .center-column {
+        width: 98%;
+      }
+
+      .left-column {
+        width: 98%;
+      }
+
+      .right-column {
+        width: 98%;
+      }
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- <div class="sample-div">
+  </div> -->
+  <div style="display: flex; flex-wrap: wrap;">
+    <div class="left-column com-div"></div>
+    <div class="center-column com-div"></div>
+    <div class="right-column com-div"></div>
+  </div>
+
+</body>
+
+</html>
